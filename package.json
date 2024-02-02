@@ -1,0 +1,52 @@
+{
+  "version": "0.0.0",
+  "name": "@rdeak/use-search-state",
+  "description": "Store the state in the URL, share it, and easily recreate it.",
+  "author": "Robert Deak <robert.deak@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rdeak/use-search-state"
+  },
+  "bugs": {
+    "url": "https://github.com/rdeak/use-search-state/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "state",
+    "route"
+  ],
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "sideEffects": false,
+  "peerDependencies": {
+    "react-router-dom": ">=6",
+    "react": ">=16.8"
+  },
+  "devDependencies": {
+    "rollup": "4.9.6",
+    "tslib": "2.6.2",
+    "@rollup/plugin-typescript": "11.1.6",
+    "@rollup/plugin-terser": "0.4.4",
+    "react-dom": "18.2.0",
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
+    "vitest": "1.2.0",
+    "@testing-library/react": "14.1.2",
+    "jsdom": "23.2.0",
+    "typescript": "5.3.3",
+    "prettier": "3.2.2",
+    "@rdeak/semantic-release-config": "1.0.3",
+    "semantic-release": "23.0.0"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:compile": "tsc --noEmit",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write  . --fix",
+    "build": "rollup -c",
+    "prepack": "npm run build"
+  }
+}
