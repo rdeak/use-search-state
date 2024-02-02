@@ -1,0 +1,3 @@
+{
+  "extends": "@rdeak/semantic-release-config"
+}

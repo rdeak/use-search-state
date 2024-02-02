@@ -4,7 +4,7 @@
   "author": "Robert Deak <robert.deak@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rdeak/use-search-state"
+    "url": "git+https://github.com/rdeak/use-search-state.git"
   },
   "bugs": {
     "url": "https://github.com/rdeak/use-search-state/issues"
