@@ -1,7 +1,6 @@
 {
-  "version": "0.0.0",
   "name": "@rdeak/use-search-state",
-  "description": "Store the state in the URL, share it, and easily recreate it.",
+  "version": "0.0.0",
   "author": "Robert Deak <robert.deak@gmail.com>",
   "repository": {
     "type": "git",
@@ -11,6 +10,7 @@
     "url": "https://github.com/rdeak/use-search-state/issues"
   },
   "license": "MIT",
+  "description": "Store the state in the URL, share it, and easily recreate it.",
   "keywords": [
     "react",
     "state",
@@ -20,6 +20,16 @@
   "module": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js",
+      "require": "./lib/cjs/index.js"
+    }
+  },
+  "files": [
+    "lib/**/*"
+  ],
   "peerDependencies": {
     "react-router-dom": ">=6",
     "react": ">=16.8"
